@@ -8,8 +8,8 @@
 The PuP lives in its own files (game/pup/, game/tron_pup/, game/pup.cfg, game/config/pup.yaml,
 game/modes/pup/, scripts/pup/), so a merge only meets four one-line hooks in upstream files:
 game/config/config.yaml (include pup.yaml), game/project.godot (the Pup autoload), .gitmodules (pup_pack) and
-.gitignore. After the merge: the submodules, the generated config and media, the capture match
-(scripts/pup/pup_captures.py: does trigger_map.yaml still point at the effects that draw each PuP capture?) and
+.gitignore, plus CLAUDE.md (keep upstream's text and the fork's PuP section). After the merge: the submodules,
+the generated config and media, the capture match (scripts/pup/pup_captures.py: does trigger_map.yaml still point at the effects that draw each PuP capture?) and
 the unit tests. Folders the merge left empty are removed (scripts/clean_tree.py). The merge is left uncommitted
 when it conflicts; nothing is pushed.
 """
